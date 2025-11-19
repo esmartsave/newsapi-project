@@ -11,14 +11,14 @@
 </head>
 <body class="bg-light">
 <div class="container py-4">
-  <h1 class="mb-4">News Browser</h1>
+  <h1 class="mb-4">The news browser</h1>
 
   <!-- Controls -->
   <div class="card mb-3 p-3">
     <div class="row g-2 align-items-center">
       <div class="col-md-4">
         <button id="btn-headlines" class="btn btn-primary w-100">
-          Load Current Headlines
+          <i>To load current headlines</i>
         </button>
       </div>
       <div class="col-md-4">
@@ -26,7 +26,7 @@
       </div>
       <div class="col-md-4">
         <button id="btn-search" class="btn btn-outline-secondary w-100">
-          Search
+          <b>Search</b>
         </button>
       </div>
     </div>
@@ -138,7 +138,7 @@
   btnSearch.addEventListener('click', () => {
     const q = searchInput.value.trim();
     if (!q) {
-      setStatus('Please enter a search term.');
+      setStatus('Kindly please write what to search');
       return;
     }
     fetchNews('news.php?action=search&q=' + encodeURIComponent(q));
