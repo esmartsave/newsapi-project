@@ -132,7 +132,7 @@
   }
 
   btnHeadlines.addEventListener('click', () => {
-    fetchNews('news.php?action=headlines');
+    fetchNews('news.html?action=headlines');
   });
 
   btnSearch.addEventListener('click', () => {
@@ -141,11 +141,11 @@
       setStatus('Kindly please write what to search');
       return;
     }
-    fetchNews('news.php?action=search&q=' + encodeURIComponent(q));
+    fetchNews('news.html?action=search&q=' + encodeURIComponent(q));
   });
 
   // Load headlines on first page load
-  fetchNews('news.php?action=headlines');
+  fetchNews('news.html?action=headlines');
 </script>
 </body>
 </html>
