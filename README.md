@@ -1,2 +1,2 @@
-# newsapi-project
+# Browsing new
 Brwosing news
