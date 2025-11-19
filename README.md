@@ -1,2 +1,2 @@
-# Browsing new
+# Browsing news
 Brwosing news
